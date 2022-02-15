@@ -11,7 +11,7 @@ Once the user is registered, they are able to join their room of preference to c
 I also developed the backend server which handles the sharing data throughout the chat rooms. You can check out the repo here [ChatAppServer](https://github.com/elewites/ChatAppServer). 
 
 
-The app is also deployed with Netlify and can be accessed here: [StudentCord](https://student-cord.netlify.app/).
+The app is deployed with Netlify and can be accessed here: [StudentCord](https://student-cord.netlify.app/).
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9b56ce4a-00e8-407c-b862-181d3dc7ee53/deploy-status)](https://app.netlify.com/sites/crypt0-app/deploys)
@@ -19,9 +19,12 @@ The app is also deployed with Netlify and can be accessed here: [StudentCord](ht
 
 # Purpose
 
-I wanted to improve my skills using websockets and incorportate this into a full stack application. 
-I also wanted to explore using [Google OAuth2.0 library](https://developers.google.com/identity/protocols/oauth2) since it has become a very popular 
-form of authentication in web applications. 
+1. I wanted to improve my skills using websockets and real time data sharing. 
+
+2. I wanted to develop a full stack application that allowed me to become comfortable with the backend-frontend communication structure. 
+
+2. I also wanted to explore using [Google OAuth2.0 library](https://developers.google.com/identity/protocols/oauth2) since it has become a very popular 
+form of authenticating users in web applications. 
 
 ## Installation
 
@@ -62,8 +65,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 3. Once the user has connected to a room, they are able to send messages to the room and recieve messages from everyone else in the room. 
 
-- e.g. Displaying the price of bitcoin in USD or EUR is the user's choice.
-
 4. The user is able to logout whenever they want via a logout button.
 
-5. The login state of the user persists for a period of time in session storage until the application is closed.
+5. The login state of the user persists for a period of time in the session storage as long as the browser window is not closed.
