@@ -4,8 +4,9 @@ This is the client side architecture for a React Chat application. In the app, u
 
 This was developed using the [OAuth2.0 library](https://developers.google.com/identity/protocols/oauth2). 
 
-Once the user is registered, they are able to join their room of preference to chat with other users. [Socket.io client](https://socket.io/) was used 
-to create web sockets that allow the user to send real time data to the server and back. 
+Once the user is registered, they are able to join their room of preference to chat with other users. 
+
+[Socket.io client](https://socket.io/) was used to create web sockets that allow the user to send real time data to the server and back. 
 
 The application makes use of my own backend API. You can check out the repo here [ChatAppServer](https://github.com/elewites/ChatAppServer). 
 
