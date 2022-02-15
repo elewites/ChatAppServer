@@ -1,8 +1,10 @@
 # ChatAppServer
 
-This is the server side architecture for a React Chat application. Check out the client application that consumes this REST API here [ChatAppClient](https://github.com/elewites/ChatAppClient.git).
+This is the server side architecture for a React Chat application. 
 
-This server is built on the following technologies: 
+Check out the client application that consumes this REST API here [ChatAppClient](https://github.com/elewites/ChatAppClient.git).
+
+This server is built with the following technologies: 
 - Node.js
 - Express.js
 - MongoDB
