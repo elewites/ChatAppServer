@@ -32,7 +32,7 @@ This allows the server to have access to user data whenever it is needed.
 
 However, in later versions of the application, I will store messages sent by the user to the database. 
 
-This is why in the **/models** folder, two files: **message.js** and **room.js** have been created. 
+This is why in the `/models` folder, two files: `message.js` and `room.js` have been created. 
 
 This models will be used to achieve said functionality. 
 
