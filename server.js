@@ -19,7 +19,7 @@ app.use(express.json());
 //App setup
 const PORT = process.env.PORT || 3001;
 const server = http.createServer(app);
-server.listen(process.env.PORT, () => {
+server.listen(PORT, () => {
   console.log("sever is running");
 });
 
