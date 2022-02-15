@@ -26,7 +26,7 @@ server.listen(PORT, () => {
 //database connection
 mongoose
   .connect(
-    `mongodb+srv://eros:better_together@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    `mongodb+srv://eros:${process.env.DB_PASSWORD}@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -53,21 +53,7 @@ io.on("connection", (socket) => {
 
   //listening for a join_room event
   socket.on("join_room", async (data) => {
-    //new user joins room
-    // console.log(data.user);
-    // console.log(data.room);
     socket.join(data.room);
-
-    //fetch room from database to determine if new room needs to be created
-    // const fetchRoom = await RoomModel.findOne({ room: data.room });
-
-    // //we create a new room if fetchRoom is null
-    // if (fetchRoom) {
-    //   //console.log("eros");
-    // } else {
-    //   const newRoom = new RoomModel({ roomName: data.room, messages: [] });
-    //   await newRoom.save();
-    // }
 
     console.log(`${data.user} joined the room: ${data.room}`);
   });
@@ -76,20 +62,6 @@ io.on("connection", (socket) => {
   socket.on("send_text", async (data) => {
     //emitting data to data.room through recieve_text event
     socket.to(data.room).emit("recieve_text", data.content);
-
-    // //formatting message to include in database
-    // const author = data.content.author;
-    // const text = data.content.text;
-    // const message = { author: author, text: text };
-
-    // //fetching room from database
-    // const fetchedRoom = await RoomModel.findOne({ room: data.room });
-    // //uploading new messages to the room in the database
-    // if (fetchedRoom) {
-    //   fetchedRoom.messages.push(message);
-    //   await fetchedRoom.save();
-    // }
-
     console.log(data);
   });
 
