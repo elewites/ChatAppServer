@@ -22,6 +22,16 @@ The server is deployed with Heroku.
 
 2. I also wanted to explore using non relational databases, MongoDB in this case and the object data modeling library Mongoose. 
 
+# Future Phases
+
+Currently the server does not save each message sent by the user to the database. 
+
+The only way the database is used, is to store user information. 
+
+This allows the server to have access to user data whenever it is needed.
+
+However, in later versions of the application, I will store messages sent by the user to the database. 
+
 ## Installation
 
 The server is deployed to heroku but you can always clone and run it in your local machine. 
