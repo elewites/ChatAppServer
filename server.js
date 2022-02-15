@@ -26,7 +26,7 @@ server.listen(PORT, () => {
 //database connection
 mongoose
   .connect(
-    `mongodb+srv://eros:${process.env.DB_PASSWORD}@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    `mongodb+srv://eros:better_together}@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
