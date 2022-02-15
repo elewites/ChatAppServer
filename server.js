@@ -26,7 +26,10 @@ server.listen(PORT, () => {
 //database connection
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_username}:${process.env.DB_password}@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+    `mongodb+srv://${process.env.DB_username}:${process.env.DB_password}@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+    }
   )
   .then(() => console.log("connected to db on port: " + PORT));
 
