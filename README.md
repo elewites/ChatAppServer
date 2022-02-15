@@ -1,71 +1,25 @@
 # ChatAppServer
 
-This is the client side architecture for a React Chat application. In the app, users are able to login/register with Google. 
+This is the server side architecture for a React Chat application. Check out the client application that consumes this REST API here [ChatAppClient](https://github.com/elewites/ChatAppClient.git).
 
-This was developed using the [OAuth2.0 library](https://developers.google.com/identity/protocols/oauth2). 
+This server is built on the following technologies: 
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose ODM
+- Socket.io Server API
 
-Once the user is registered, they are able to join their room of preference to chat with other users. 
-
-[Socket.io client](https://socket.io/) was used to create web sockets that allow the user to send real time data to the server and back. 
-
-I also developed the backend server which handles the sharing data throughout the chat rooms. You can check out the repo here [ChatAppServer](https://github.com/elewites/ChatAppServer). 
-
-
-The app is deployed with Netlify and can be accessed here: [StudentCord](https://student-cord.netlify.app/).
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b56ce4a-00e8-407c-b862-181d3dc7ee53/deploy-status)](https://app.netlify.com/sites/crypt0-app/deploys)
-
+The server is deployed with Heroku.
 
 # Purpose
 
-1. I wanted to improve my skills using websockets and real time data sharing. 
+1. I wanted to create a REST API for a client side chat application. 
 
-2. I wanted more exposure to the design process of involved in creating a full stack application. 
+2. I wanted more exposure to the design process involved in creating a full stack application. 
 - The project gave me valuable experience with backend-frontend architecture and how these two components communicate to each other.  
 
-2. I also wanted to explore using [Google OAuth2.0 library](https://developers.google.com/identity/protocols/oauth2) since it has become a very popular 
-form of authenticating users in web applications. 
+2. I also wanted to explore using non relational databases, MongoDB in this case and the object data modeling library Mongoose. 
 
 ## Installation
 
-The app is already deployed so you can play around with the final product using this [link](https://student-cord.netlify.app/).
-
-If you wish to run the app locally, clone this repo and install the dependencies. 
-
-```
-$ git clone https://github.com/elewites/ChatAppClient.git
-$ cd chatapp
-$ npm install 
-```
-
-Once the dependencies install, run the following command on your terminal:
-
-`npm start`
-
-This will run the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### Learn More 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## App Design
-- The app is built as a responsive web app to fit desktop, laptop, and mobile screens.
-
-## User Stories
-### The following user stories helped me organize the development of the app and visualize the end result. 
-
-1. In this app the user is able to authenticate their persona with Google. This allows them to register/login easily into the application. 
-
-2. The user is able to select a room of their choice from a list of 5 rooms. 
-
-3. Once the user has connected to a room, they are able to send messages to the room and recieve messages from everyone else in the room. 
-
-4. The user is able to logout whenever they want via a logout button.
-
-5. The login state of the user persists for a period of time in the session storage as long as the browser window is not closed.
+The server is deployed to heroku but you can always clone and run it in your local machine. 
