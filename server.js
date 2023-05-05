@@ -23,10 +23,11 @@ server.listen(PORT, () => {
   console.log("sever is running");
 });
 
+database_URI = `mongodb+srv://eros:better_together@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
 //database connection
 mongoose
   .connect(
-    `mongodb+srv://eros:better_together@cluster0.exjg5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    database_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
