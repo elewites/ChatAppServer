@@ -39,3 +39,5 @@ This models will be used to achieve said functionality.
 ## Installation
 
 The server is deployed to heroku but you can always clone and run it in your local machine. 
+
+The server connects to a cloud-based MongoDB cluster but if you wish to use the code with your own cluster
