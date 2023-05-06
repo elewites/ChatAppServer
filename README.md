@@ -13,14 +13,14 @@ This server is built with the following technologies:
 
 The server is currently deployed with Heroku.
 
-# Purpose
+# Purpose/Learning Goals
 
 1. I wanted to create a REST API for a client side chat application. 
 
 2. I wanted more exposure to the design process involved in creating a full stack application. 
 - The project gave me valuable experience with backend-frontend architecture and how these two components communicate to each other.  
 
-2. I also wanted to explore using non relational databases, MongoDB in this case and the object data modeling library Mongoose. 
+3. I also wanted to explore using non relational databases, MongoDB in this case and the object data modeling library Mongoose. 
 
 # Future Phases
 
